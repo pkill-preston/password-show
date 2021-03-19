@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="#">
-    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/main.js"defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <form action="" id="form">
-            <input type="text" name="" id="input1">
-            <input type="password" name="" id="input2">
-            <input type="checkbox" name="" id="check" onclick="checking()">
-            <label for="" class="checkmark"></label>
+        <form action="">
+            <div class="input-field login">
+                <p>Login</p>
+                <input type="text" placeholder="Insert user or email" name="" id="login" >
+                <div class="underline"></div>
+            </div>
+            <div class="input-field password">
+                <p>Password</p>
+                <input type="password" placeholder="Insert your password" name="" id="password"><div class="underline">
+                    <input type="checkbox" class="checkButton" name="check" onclick="checking()" id="check">
+                    <label for="check" class="labelChecker"><img src="eye.svg" class="imageChecker"alt=""></label>
+                </div>
+            </div>
+            <div class="submitButtonContainer"><button class="submitButton">Submit</button></div>
         </form>
     </div>
 </body>

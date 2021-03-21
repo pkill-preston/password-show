@@ -1,3 +1,5 @@
+AOS.init();
+
 var labelChecker = document.getElementsByClassName("labelChecker")[0];
 var imageChecker = document.getElementsByClassName("imageChecker")[0];
 
@@ -17,5 +19,4 @@ function checking()
         labelChecker.style.display = "flex";
         imageChecker.style.display = "flex";
     }
-
 }

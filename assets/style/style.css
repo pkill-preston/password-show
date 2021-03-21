@@ -1,0 +1,123 @@
+:root{
+    --gunmetal: rgb(50, 73, 102);
+    --medium-turquoise: hsla(176, 56%, 55%, 1);
+    --beau-blue: #bfd7eaff;
+    --bittersweet: rgb(34, 110, 110);
+    --naples-yellow: hsla(50, 100%, 71%, 1);
+}
+
+body{
+    background-color: var(--gunmetal);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center
+}
+
+*{
+    font-family: 'Ubuntu Mono', monospace
+}
+
+.container{
+    border: 5px solid var(--beau-blue);
+    overflow: hidden;
+    padding: 16px;
+    border-end-end-radius: 16px;
+    border-start-start-radius: 16px;
+    background-color: var(--medium-turquoise);
+    width: 654px;
+    height: 518px;
+    position: relative;
+    
+}
+
+.input-field p{
+    font-size: 3.75rem;
+    color: var(--gunmetal);
+    margin: 0
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: var(--gunmetal) 0.2rem solid;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.input-field :nth-child(2){ 
+    width: 23.88rem;
+    height: 50px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    outline: none;
+}
+
+
+.input-field{
+    margin: 45px 0 0 150px
+}
+
+.underline{
+    display: inline-block
+}
+
+.underline input{
+    display: none;
+}
+
+.underline label{
+    position: absolute;
+    top: 310px;
+    right: 0;
+    bottom: 0;
+    left: 555px
+}
+
+
+.underline img{
+    height: 3.80rem;
+    width: 3.80rem;
+    position: absolute;
+    display: flex;
+    outline: none;
+    cursor: pointer
+}
+
+.submitButtonContainer{
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.submitButton{
+    position: absolute;
+    width: 12.625rem;
+    height: 4.5rem;
+    top: 380px;
+    right: 0;
+    bottom: 0;
+    left: 245px;
+    padding: 0;
+    justify-content: center;
+    margin-top: 80px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--bittersweet);
+    border: 3px var(--beau-blue) solid;
+    outline: none;
+    color: var(--beau-blue);
+}
+
+input[type="checkbox"]:checked + label{
+    background: no-repeat url(../images/invisible.svg);
+    height: 3.75rem;
+    width: 3.75rem;
+    outline: none;
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/animation.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -17,16 +18,17 @@
             <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000" class="input-field login">
                 <p>Login</p>
                 <input type="text" placeholder="Insert user or email" name="" id="login" >
-                <div class="underline"></div>
             </div>
             <div class="input-field password">
                 <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">Password</p>
                 <input data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000" type="password" placeholder="Insert your password" name="" id="password"><div class="underline">
                     <input type="checkbox" class="checkButton" name="check" onclick="checking()" id="check">
-                    <label for="check" class="labelChecker"><img data-aos="fade-down" data-aos-delay="3000" data-aos-duration="50" src="/assets/images/visible.svg" class="imageChecker"alt=""></label>
+                    <label for="check" class="labelChecker"><img data-aos="zoom" data-aos-delay="3000" data-aos-duration="2000" src="/assets/images/visible.png" class="imageChecker"alt=""></label>
                 </div>
             </div>
-            <div class="submitButtonContainer"><button data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="2000" class="submitButton">Submit</button></div>
+            <div class="submitButtonContainer">
+                <button data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="3000"  class="submitButton">Submit</button>
+            </div>
         </form>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

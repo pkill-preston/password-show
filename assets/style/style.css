@@ -1,13 +1,12 @@
-:root{
-    --gunmetal: rgb(50, 73, 102);
-    --medium-turquoise: hsla(176, 56%, 55%, 1);
-    --beau-blue: #bfd7eaff;
-    --bittersweet: rgb(34, 110, 110);
-    --naples-yellow: hsla(50, 100%, 71%, 1);
-}
+/* 
+    gunmetal: #324966;
+    medium-turquoise: #4ccdc4;
+    beau-blue: #bfd7eaff;
+    bittersweet: #226e6e;
+*/
 
 body{
-    background-color: var(--gunmetal);
+    background-color: #324966;
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,12 +20,12 @@ body{
 }
 
 .container{
-    border: 5px solid var(--beau-blue);
+    border: 5px solid #bfd7eaff;
     overflow: hidden;
     padding: 16px;
     border-end-end-radius: 16px;
     border-start-start-radius: 16px;
-    background-color: var(--medium-turquoise);
+    background-color: #4ccdc4;
     width: 654px;
     height: 518px;
     position: relative;
@@ -35,7 +34,7 @@ body{
 
 .input-field p{
     font-size: 3.75rem;
-    color: var(--gunmetal);
+    color: #324966;
     margin: 0
 }
 
@@ -43,7 +42,7 @@ input{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: var(--gunmetal) 0.2rem solid;
+    border-bottom: #324966 0.2rem solid;
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -54,6 +53,8 @@ input{
     margin-bottom: 5px;
     margin-top: 25px;
     outline: none;
+    color: #324966;
+
 }
 
 
@@ -100,7 +101,7 @@ input{
     position: absolute;
     width: 12.625rem;
     height: 4.5rem;
-    top: 380px;
+    top: 370px;
     right: 0;
     bottom: 0;
     left: 245px;
@@ -109,14 +110,34 @@ input{
     margin-top: 80px;
     align-items: center;
     border-radius: 10px;
-    background-color: var(--bittersweet);
-    border: 3px var(--beau-blue) solid;
+    background-color: #226e6e;
+    border: 3px #324966 solid;
     outline: none;
-    color: var(--beau-blue);
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #bfd7eaff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #324966 0.2rem solid;
+    -webkit-text-fill-color: #324966 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #4ccdc4 inset;
 }
 
 input[type="checkbox"]:checked + label{
-    background: no-repeat url(../images/invisible.svg);
+    background: no-repeat url(../images/invisible.png);
+    background-size: contain;
     height: 3.75rem;
     width: 3.75rem;
     outline: none;
